@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+
+body{
+   background-color: #d75445;
+
+}
+
+.Name{
+  position: relative;
+  left: 490px;
+  bottom: -185px;
+  font-size: 24px;
+  border-radius: 20px;
+  background-color: rgb(182, 182, 241);
+}
+
+.Resting{
+  position: relative;
+  left: 490px;
+  bottom: -190px ;
+  font-size: 24px;
+  border-radius: 20px;
+  background-color: rgb(182, 182, 241);
+}
+
+.Active{
+  position: relative;
+  left: 490px;
+  bottom: -195px;
+  font-size: 24px;
+  border-radius: 20px;
+  background-color: rgb(182, 182, 241);
+}
+
+.Submit{
+  position: relative;
+  left: 616px;
+  bottom: -201px;
+  font-size: 24px;
+  border-radius: 20px;
+  background-color: rgb(182, 182, 241);
+}
+
+.Gym{
+  position: relative;
+  left: 460px ;
+  bottom: -100px;
+  font-size: 35px ;
+  color: rgb(26, 26, 144) ;
+}
+
+.Rule{
+  position: relative;
+  left: 330px;
+  bottom: -150px;
+  font-size: 20px;
+  color: rgb(26, 26, 144) ;
+
+}
