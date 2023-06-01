@@ -11,7 +11,7 @@ body{
 .Name{
   position: relative;
   left: 490px;
-  bottom: -185px;
+  bottom: -120px;
   font-size: 24px;
   border-radius: 20px;
   background-color: rgb(182, 182, 241);
@@ -20,7 +20,7 @@ body{
 .Resting{
   position: relative;
   left: 490px;
-  bottom: -190px ;
+  bottom: -125px ;
   font-size: 24px;
   border-radius: 20px;
   background-color: rgb(182, 182, 241);
@@ -29,16 +29,26 @@ body{
 .Active{
   position: relative;
   left: 490px;
-  bottom: -195px;
+  bottom: -130px;
   font-size: 24px;
   border-radius: 20px;
   background-color: rgb(182, 182, 241);
 }
 
+.Hour{
+  position: relative;
+  left: 490px;
+  bottom: -135px;
+  font-size: 24px;
+  border-radius: 20px;
+  background-color: rgb(182, 182, 241);
+
+}
+
 .Submit{
   position: relative;
   left: 616px;
-  bottom: -201px;
+  bottom: -142px;
   font-size: 24px;
   border-radius: 20px;
   background-color: rgb(182, 182, 241);
@@ -47,7 +57,7 @@ body{
 .Gym{
   position: relative;
   left: 460px ;
-  bottom: -100px;
+  bottom: -50px;
   font-size: 35px ;
   color: rgb(26, 26, 144) ;
 }
@@ -55,7 +65,7 @@ body{
 .Rule{
   position: relative;
   left: 330px;
-  bottom: -150px;
+  bottom: -80px;
   font-size: 20px;
   color: rgb(26, 26, 144) ;
 
