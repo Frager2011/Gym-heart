@@ -10,13 +10,48 @@
    <p class="Rule">Please Do Only Record your Answer Once When Told by Ms Friedman <br> If Tried To Mess Around Getting Caught Will be Super easily And will Get points <br>
     Deducted!</p>
 
- <form action="https://script.google.com/macros/s/AKfycby1VLH0JXfBLhP4pQ03jgsM7_BQM-3cADaESQR2uM6tg43nJUSWXZqspH8ZMhCw8ogh/exec" method='post'>
+  <form id="form" method='post'>
+
    <input class="Name" type="text" name="name" placeholder='  Full Name' required><br><br>
    <input class="Resting" type="text" name="Resting" placeholder='  Resting Heart Rate'required ><br><br>
    <input class="Active" type="text" name="Active" placeholder='  Active Heart Rate'required ><br><br>
-   <input class="Hour" type="text" name="Hour" placeholder='Enter Your Hour'required ><br><br>
-   <input class="Submit" type="submit">
+   <input class="Hour" type="text" name="Hour" placeholder='  Enter Your Hour'required ><br><br>
+   <input class="Submit" type="submit" onclick="submitForm()">
+   
  </form>
+ <div class="message" id="message"></div>
+
+ <script>
+   function submitForm() {
+     const form =document.getElementById('form');
+     const name = form.elements.name.value;
+     const restingRate = form.elements.Resting.value;
+     const activeRate = form.elements.Active.value;
+     const hour = form.elements.Hour.value;
+
+     const lastSubmitTime = localStorage.getItem('lastSubmitTime');
+
+     if (lastSubmitTime) {
+       const delay = 12 * 60 * 60 * 1000; // 12 hours in milliseconds
+       const timeSinceLastSubmit = Date.now() - lastSubmitTime;
+       const timeLeft = delay - timeSinceLastSubmit;
+       if (timeLeft > 0) {
+         const minutesLeft = Math.floor(timeLeft / (60 * 1000));
+         const hoursLeft = Math.floor(minutesLeft / 60);
+         const remainingMinutes = minutesLeft % 60;
+         const message = `You cannot submit again for another ${hoursLeft} hours and ${remainingMinutes} minutes.`;
+         document.getElementById('message').textContent = message;
+         return;
+       }
+     }
+
+     localStorage.setItem('lastSubmitTime', Date.now());
+     form.action = "https://script.google.com/macros/s/AKfycby1VLH0JXfBLhP4pQ03jgsM7_BQM-3cADaESQR2uM6tg43nJUSWXZqspH8ZMhCw8ogh/exec";
+     form.submit();
+   }
+ </script>
+
+
 
 </body>
 </html>

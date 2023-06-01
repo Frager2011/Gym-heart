@@ -11,7 +11,7 @@ body{
 .Name{
   position: relative;
   left: 490px;
-  bottom: -120px;
+  bottom: -110px;
   font-size: 24px;
   border-radius: 20px;
   background-color: rgb(182, 182, 241);
@@ -20,7 +20,7 @@ body{
 .Resting{
   position: relative;
   left: 490px;
-  bottom: -125px ;
+  bottom: -115px ;
   font-size: 24px;
   border-radius: 20px;
   background-color: rgb(182, 182, 241);
@@ -29,7 +29,7 @@ body{
 .Active{
   position: relative;
   left: 490px;
-  bottom: -130px;
+  bottom: -120px;
   font-size: 24px;
   border-radius: 20px;
   background-color: rgb(182, 182, 241);
@@ -38,7 +38,7 @@ body{
 .Hour{
   position: relative;
   left: 490px;
-  bottom: -135px;
+  bottom: -125px;
   font-size: 24px;
   border-radius: 20px;
   background-color: rgb(182, 182, 241);
@@ -48,7 +48,7 @@ body{
 .Submit{
   position: relative;
   left: 616px;
-  bottom: -142px;
+  bottom: -132px;
   font-size: 24px;
   border-radius: 20px;
   background-color: rgb(182, 182, 241);
@@ -69,4 +69,12 @@ body{
   font-size: 20px;
   color: rgb(26, 26, 144) ;
 
+}
+
+.message{
+  position: relative;
+  left: 392px;
+  bottom: -135px;
+  font-size: 24px;
+  color: blue;
 }
