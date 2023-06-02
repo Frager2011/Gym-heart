@@ -2,6 +2,8 @@
 <head>
   <title>Gym Heart rate</title>
   <link rel="stylesheet" href="style.css">
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5123275380153057"
+     crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -21,37 +23,19 @@
  </form>
  <div class="message" id="message"></div>
 
- <script>
-   function submitForm() {
-     const form =document.getElementById('form');
-     const name = form.elements.name.value;
-     const restingRate = form.elements.Resting.value;
-     const activeRate = form.elements.Active.value;
-     const hour = form.elements.Hour.value;
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5123275380153057"
+     crossorigin="anonymous"></script>
+<!-- Gym Heartrate -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5123275380153057"
+     data-ad-slot="8173362582"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-     const lastSubmitTime = localStorage.getItem('lastSubmitTime');
-
-     if (lastSubmitTime) {
-       const delay = 12 * 60 * 60 * 1000; // 12 hours in milliseconds
-       const timeSinceLastSubmit = Date.now() - lastSubmitTime;
-       const timeLeft = delay - timeSinceLastSubmit;
-       if (timeLeft > 0) {
-         const minutesLeft = Math.floor(timeLeft / (60 * 1000));
-         const hoursLeft = Math.floor(minutesLeft / 60);
-         const remainingMinutes = minutesLeft % 60;
-         const message = `You cannot submit again for another ${hoursLeft} hours and ${remainingMinutes} minutes.`;
-         document.getElementById('message').textContent = message;
-         return;
-       }
-     }
-
-     localStorage.setItem('lastSubmitTime', Date.now());
-     form.action = "https://script.google.com/macros/s/AKfycby1VLH0JXfBLhP4pQ03jgsM7_BQM-3cADaESQR2uM6tg43nJUSWXZqspH8ZMhCw8ogh/exec";
-     form.submit();
-   }
- </script>
-
-
-
+<script src="script.js"></script>
 </body>
 </html>
